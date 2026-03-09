@@ -42,7 +42,7 @@ import Layout from '../layouts/Layout.astro';
           class="w-full border border-border rounded px-4 py-2.5 text-[15px] focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary resize-y"
         ></textarea>
       </div>
-      <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY"></div>
+      <div class="cf-turnstile" data-sitekey={import.meta.env.PUBLIC_TURNSTILE_SITE_KEY}></div>
       <button
         type="submit"
         class="bg-accent hover:bg-accent-light text-white font-semibold px-8 py-3 rounded-[10px] text-[15px] transition-colors"
