@@ -53,7 +53,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       Authorization: `Bearer ${RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: 'Weboldal <onboarding@resend.dev>',
+      from: 'Weboldal <uzenet@tagostonlaszlo.hu>',
       to: [CONTACT_EMAIL],
       subject: `Üzenet a weboldalról: ${name}`,
       reply_to: email,
