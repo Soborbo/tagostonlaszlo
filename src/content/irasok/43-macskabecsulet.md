@@ -24,7 +24,7 @@ No, ebben megegyeztünk, meg abban is, hogy együtt megyünk el érte a műtét 
 
 Csak néztem ezt a magatehetetlen, alig pihegő jószágot, amelyik sokkal inkább hasonlított egy kidobott fahasábhoz, mint a mi kedves, játékos, huncut kis Durci cicánkhoz. Szerettem volna megsimogatni azt a selymes puha szőrét, összedugni vele a homlokomat... Azt se bántam volna, ha megkarmol, ha belém harap, de nem. Ő csak feküdt az asztalon mozdulatlanul, mintha már nem is akarna megmozdulni többé. „Ó, add Uram Isten, hogy meggyógyuljon, hogy újra az lehessen, ami volt! Ne hagyd, hogy én okozzam a vesztét!”
 
-Óvatosan belefektettük a kosárba és elindultunk vele hazafelé. A búcsúzásnál még a lelkünkre kötötte az orvos, hogy puha, meleg helyet készítsünk neki, s ne vegyük rossz néven, ha netán bepiszkít, mert ez most az állapotával jár. Az is lehet, hogy egy - két napig az ételt se fogadja el.
+Óvatosan belefektettük a kosárba és elindultunk vele hazafelé. A búcsúzásnál még a lelkünkre kötötte az orvos, hogy puha, meleg helyet készítsünk neki, s ne vegyük rossz néven, ha netán bepiszkít, mert ez most az állapotával jár. Az is lehet, hogy egy-két napig az ételt se fogadja el.
 
 A fürdőszobában teljesen kinyitottuk a radiátor csapját, hogy jó meleg legyen. Elé ágyaztunk Durcinak egy nagy párnára, s körberaktuk rongyokkal, hogy le ne essen róla. Simogattuk, becézgettük. A feleségem megnedvesített egy darab vattát, azt tette a cica nyelvére. Láttuk, hogy jólesik neki. Egy idő után már hunyorgott is, meg bólintott egy picit. Mintha azt mondta volna: „Örülök, hogy itt vagytok körülöttem, hogy törődtök velem.” Felváltva ücsörögtünk mellette. Őriztük, mint a nagy beteg embert szokás, és lestük minden kívánságát. Ha megmozdult, máris szóltunk a család többi tagjának: „Nézzétek, már a fülét is megmozdította!” vagy „ Oda nézz! Kunkorítja a farkát!” Én ígéretemhez híven megvettem neki a piacon a legszebb csirkemájat. Oda is vittem, a tenyeremből kínáltam, de csak lehunyta a szemét és elfordította a fejét. Pedig már a műtét előtti napon se kapott enni.
 
@@ -43,7 +43,7 @@ Kipattantam az ágyból. Valóban üres volt a párna. Hívtuk, keresgéltük, s
 
 Másnap reggel Maris néninek is eldicsekedtünk vele, milyen rendes a mi cicánk. Még ilyen elesett állapotában is tudja, mi a dolga, meg az illem.
 – Hát hallod – mondta –, ha ennyire rendes ez a ti macskátok, már szinte sajnálom, hogy nem lesz kölyke. Kedvem lenne befogadni a Morzsim mellé. De ha jól meggondolom, akár őt is átvállalhatnám, hiszen ti úgyis kandúrt akartatok. A műtét költségét meg akár ki is fizetem.
-– Szó se lehet róla - mondtam. – Durci a mi cicánk, és az is marad. Mi vagyunk az ő családja. Végtére is miattunk kell élete végéig vénkisasszonynak maradnia.
+– Szó se lehet róla – mondtam. – Durci a mi cicánk, és az is marad. Mi vagyunk az ő családja. Végtére is miattunk kell élete végéig vénkisasszonynak maradnia.
 
 (Az írás megjelent a [Csendélet tigrissel](https://tagostonlaszlo.hu/termek/csendelet-tigrissel-novellak/) című kötetben)
 *(Durci ma is a családunk tagja. 12 éves, jó egészségnek örvend. Reggelenként mellettem ül az asztalnál és dorombolva várja kezemből a falatot.)*

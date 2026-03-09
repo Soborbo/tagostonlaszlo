@@ -44,5 +44,3 @@ A te századod már a huszonegyedik lesz. A jövő század felnőttje leszel. Ta
 Most kitapintom rugdalózó kis lábacskáidat, és betölti szívemet a hit. Nem földöntúli csodákban hiszek én, nem magas trónusú istenekben, hanem Benned, Bennetek, az Ember fiaiban. Hiszem, hogy bennetek felnő majd az értelem, s megteremtitek azt a békét, jogot, boldogabb világot, melyről hajdan az én nagyapám álmodott.
 
 -1986-
-
-[(Az írás megjelent T. Ágoston László "Hazatért liliomok című emlékkötetében, amely megrendelhető ide kattintva!)](https://tagostonlaszlo.hu/termek/hazatert-liliomok/)

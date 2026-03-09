@@ -6,23 +6,6 @@ import Layout from '../layouts/Layout.astro';
   <section class="max-w-[800px] mx-auto px-5 py-12">
     <h1 class="text-3xl md:text-4xl font-bold mb-8">Kapcsolat</h1>
 
-    <div class="mb-10 space-y-2 text-lg">
-      <p><strong>Levélcím:</strong> 1174 Budapest, Baross u.8. I. 5.</p>
-      <p><strong>E-mail:</strong> info@tagostonlaszlo.hu</p>
-    </div>
-
-    <div class="mb-10 space-y-2 text-text-light">
-      <p>A honlapot üzemelteti: <strong>Dulcinea Event Bt.</strong></p>
-      <p>Cégjegyzékszám: 01-06-793408</p>
-      <p>Adószám: 26332835-1-42.</p>
-      <p>Képviseli: Ágostonné Takács Erzsébet</p>
-      <p>Bankszámlaszám: 16200223-10082847 (Magnet Bank)</p>
-    </div>
-
-    <hr class="border-border mb-10" />
-
-    <h2 class="text-2xl font-bold mb-6">Üzenet küldése</h2>
-
     <form id="contact-form" class="space-y-5">
       <div>
         <label for="name" class="block text-sm font-semibold mb-1">Név</label>
@@ -44,6 +27,11 @@ import Layout from '../layouts/Layout.astro';
           class="w-full border border-border rounded px-4 py-2.5 text-[15px] focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
         />
       </div>
+      <!-- Honeypot field - hidden from real users -->
+      <div class="absolute -left-[9999px]" aria-hidden="true">
+        <label for="website">Ne töltse ki ezt a mezőt</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+      </div>
       <div>
         <label for="message" class="block text-sm font-semibold mb-1">Üzenet</label>
         <textarea
@@ -54,6 +42,7 @@ import Layout from '../layouts/Layout.astro';
           class="w-full border border-border rounded px-4 py-2.5 text-[15px] focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary resize-y"
         ></textarea>
       </div>
+      <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY"></div>
       <button
         type="submit"
         class="bg-accent hover:bg-accent-light text-white font-semibold px-8 py-3 rounded-[10px] text-[15px] transition-colors"
@@ -65,17 +54,30 @@ import Layout from '../layouts/Layout.astro';
   </section>
 </Layout>
 
+<script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 <script>
   const form = document.getElementById('contact-form') as HTMLFormElement;
   const status = document.getElementById('form-status')!;
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Honeypot check
+    const honeypot = (form.elements.namedItem('website') as HTMLInputElement)?.value;
+    if (honeypot) {
+      status.textContent = 'Üzenet sikeresen elküldve! Köszönjük.';
+      status.className = 'text-sm text-green-700';
+      form.reset();
+      return;
+    }
+
     const data = new FormData(form);
     const body = {
       name: data.get('name'),
       email: data.get('email'),
       message: data.get('message'),
+      'cf-turnstile-response': data.get('cf-turnstile-response'),
     };
 
     status.textContent = 'Küldés...';

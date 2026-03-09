@@ -72,4 +72,3 @@ Ott talált rá az asszony, és kétségbeesetten rohant hozzá.
 ‒ Hát azt a német gyártmányút, amit együtt néztünk.
 ‒ Most már mindegy. A pirosat kellett volna.
 
-{SCOpenGraph image=https://tagostonlaszlo.hu/images/tevezes.jpg}{SCOpenGraph title=T. Ágoston László: A piros porszívó} {SCOpenGraph description=Fehér Lajos, a sokat próbált esztergályos szakmunkás csak állt ott a zöldséges rekeszre dobált ruhái mellett, egyre gyorsabban pörgött körülötte a világ. Bizonytalanul az egyenruhások felé lépett, aztán megingott és elterült a padlón.}

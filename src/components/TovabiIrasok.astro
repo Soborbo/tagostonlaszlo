@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentId: string;
+}
+
+const { currentId } = Astro.props;
+const allPosts = await getCollection('irasok');
+const withImage = allPosts.filter((p) => p.id !== currentId && p.data.heroImage);
+
+// Pick 2 random posts that have images
+const recommended = withImage
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 2);
+---
+
+{recommended.length > 0 && (
+  <section class="mt-12 pt-8 border-t border-border">
+    <h2 class="text-xl font-bold mb-6">További írások</h2>
+    <div class="grid sm:grid-cols-2 gap-6">
+      {recommended.map((post) => (
+        <a
+          href={`/irasok/${post.id}`}
+          class="group flex gap-4 p-4 rounded-lg border border-border hover:border-primary/30 hover:bg-bg-alt transition-colors"
+        >
+          <img
+            src={post.data.heroImage}
+            alt={post.data.title}
+            class="w-24 h-24 rounded object-cover shrink-0"
+          />
+          <div class="min-w-0">
+            <h3 class="font-semibold group-hover:text-primary transition-colors mb-1 line-clamp-2">
+              {post.data.title}
+            </h3>
+            {post.data.excerpt && (
+              <p class="text-sm text-text-muted line-clamp-2">{post.data.excerpt}</p>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

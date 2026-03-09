@@ -6,7 +6,7 @@ excerpt: "Augusztus elején Horányban nyaraltunk. Gyönyörű vidék a Szentend
 heroImage: "/images/posts/aranyka2.jpg"
 ---
 
-Augusztus elején Horányban nyaraltunk. Gyönyörű vidék a Szentendrei-sziget déli csücske. A Duna-part tele vízbehajló fűzfákkal, amelyek olyan sejtelmesen susognak a legkisebb szélrezdülésre is, mintha évszázados nagy titkokat akarnának elmesélni az alattuk ülőknek. És azok a levegőbe kapaszkodó, hatalmas gyökerek... Olyanok, akár a zsákmányát szorongató polip. Pedig semmi vérengző ösztön nem szorult beléjük, csak azt a kis életet adó földet szeretnék megtartani, amit a nagy sodrású ár unos - untalan kimos közülük. Amelyik végképp alulmaradt a reménytelen küzdelemben, a gyökerét égnek emelve, az oldalára fordulva várja sorsa beteljesedését.
+Augusztus elején Horányban nyaraltunk. Gyönyörű vidék a Szentendrei-sziget déli csücske. A Duna-part tele vízbehajló fűzfákkal, amelyek olyan sejtelmesen susognak a legkisebb szélrezdülésre is, mintha évszázados nagy titkokat akarnának elmesélni az alattuk ülőknek. És azok a levegőbe kapaszkodó, hatalmas gyökerek... Olyanok, akár a zsákmányát szorongató polip. Pedig semmi vérengző ösztön nem szorult beléjük, csak azt a kis életet adó földet szeretnék megtartani, amit a nagy sodrású ár unos – untalan kimos közülük. Amelyik végképp alulmaradt a reménytelen küzdelemben, a gyökerét égnek emelve, az oldalára fordulva várja sorsa beteljesedését.
 
 Laci fiam nemrég ünnepelte a hatodik születésnapját. Karcsi öcsémtől kapott egy horgászbotot. Azért is választottuk ezt a helyet, hogy kipróbáljuk az új horgászfelszerelést, és megkísértsük a szerencsénket.
 

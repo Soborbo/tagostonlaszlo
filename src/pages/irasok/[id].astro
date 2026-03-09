@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import TovabiIrasok from '../../components/TovabiIrasok.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -36,7 +37,9 @@ const { Content } = await render(post);
       <Content />
     </div>
 
-    <nav class="mt-12 pt-6 border-t border-border">
+    <TovabiIrasok currentId={post.id} />
+
+    <nav class="mt-8 pt-6 border-t border-border">
       <a href="/irasok" class="text-primary hover:underline text-sm font-semibold">
         &larr; Vissza az írásokhoz
       </a>

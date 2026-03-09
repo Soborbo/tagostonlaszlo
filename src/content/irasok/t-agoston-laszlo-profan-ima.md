@@ -26,6 +26,3 @@ Porban feküdtem, s nem mozdult karom, szívemből is rég elszállt már az aka
 És szólt az Úr, ujját levéve számról; mit láttál, most elmondhatod. Adott hozzá szót, ceruzát is, és maga nézte át a kéziratot. És adott hű társat, aki segít, rendelt mellém jó barátokat. Kertet, madárdalt, szép virágot, asztalomra kenyeret ─ no nem halomra, csak a mindennapit.
 
 Majd jött a kór, a fájdalom, testembe kín hasít. Uram, kímélj meg tőle ─ kértem Őt, de nem hallotta óhajom. Legyen hát meg az akarat, tégy szándékod szerint. A harcot lásd, én feladom, kezedbe adom sorsomat, s nem kérek már mást, Uram. Csak egyet adj meg még nekem, mit senki más nem adhat; taníts meg úgy, ahogy csak Te tudsz. Taníts, Uram, megbocsátani!
-
-Az írás megjelent T. Ágoston László: Hazatért liliomok című emlékkötetében.
-**[A könyv megrendeléséhez kattintson ide!](/emlekkotet-megrendelese)**

@@ -32,7 +32,7 @@ Tavasz volt, rügyfakasztó, virágpattintó tavasz. Meg iskolai szünet is. Ben
 Lazítottunk ketten, apámmal. Csak ültünk a gangon az öreg padon, és nem csináltunk semmit. Néztük a kertet, a virágokon zümmögő méheket, és szívtuk magunkba a délutáni napsugarakat. Aztán egyszer csak újra huncutul megvillant a szeme.
 
 – Te, fiam, én megéheztem – mondta. – Tudod mit? Kezdjük meg a sonkát.
-– A sonkát? - kérdeztem vissza. Nagyanyám húsvét előtt soha nem engedett hozzányúlni. Azt mondta, bűn lenne megcsonkítani.
+– A sonkát? – kérdeztem vissza. Nagyanyám húsvét előtt soha nem engedett hozzányúlni. Azt mondta, bűn lenne megcsonkítani.
 – Azt hát. A miénk, nem? Én fölmegyek a padlásra, hozok le belőle mindkettőnknek, te meg addig szedjél hozzá a kertből zöldhagymát! Nem kell ezt nagyanyádnak megtudnia...
 
 És a padon ülve, a napon sütkérezve apámmal bicskával szeltük a sonkát kenyérrel és zöld hagymával. Csak úgy harsogott a fogunk alatt. Én még életemben nem ettem olyan finom sonkát. És hogy még nagyanyámnak se kell megtudnia...

@@ -109,5 +109,3 @@ Nem nagy a vágyam, csak látni még a kertet, ahogy virágba borul, ha eljön a
 No meg Uram, elmenni a halőrhöz, akinek a szavamat adtam, aki a tóparton egy termetes potykával vár. Add meg Uram, hogy hallhassam még egy kicsit a nádas zúgó szavát, s ha már ott vagyok, hadd dobjam be a horgot, s fogjam a bot kezemhez kopott végét, míg a kapásjelző fütyülni kezd. Hadd nézzem még egy kicsit a túlparti erdőt, míg a fák lombja fölött visszaint a lenyugvó napsugár.
 
 (2017)
-
-Az írás megjelent a "Hazatért liliomok" című emlékkötetben - [megrendelhető ide kattintva](https://tagostonlaszlo.hu/termek/hazatert-liliomok/).

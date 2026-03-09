@@ -8,10 +8,10 @@ heroImage: "/images/posts/homopoliticus.jpg"
 
 A *Homo Politicus* a *Homo Sapiens* (ember) fajához tartozó, annak *Minimus Deus* (kisisten) alfajába sorolható élőlény. Az alfajba sorolásról évezredek óta folyik a vita a tudósok körében. Egyes, magukat függetlennek valló természettudósok szerint a Homo Politicus bizonyos mutációi kétséget kizáróan a *puhatestűek* rendjébe sorolhatók, mivel semmiféle jel nem mutatható ki náluk a csontozat azon elemének kifejlődésére, amit a köznyelv gerincnek nevez. A vita végleges és megnyugtató lezárására mindeddig nem kerülhetett sor, mert e nézet vallói rövid életűnek bizonyultak fenti tételük bizonyításához. A Homo Politicus ugyanis soha nem független, s ha érdekeit bárki által sértve érzi, hajlamos arra, hogy függővé tegye ellenfelét akár egy kenderkötél által is.
 
-A Minimus Deus alfajt, mint természettudományi kategóriát a Homo Politicusok találták ki, hogy ezzel is megkülönböztessék magukat a halandó és alantas fajtól, a *plebs*től. A plebsnek - mint tudjuk - két alfaja ismeretes:
+A Minimus Deus alfajt, mint természettudományi kategóriát a Homo Politicusok találták ki, hogy ezzel is megkülönböztessék magukat a halandó és alantas fajtól, a *plebs*től. A plebsnek – mint tudjuk – két alfaja ismeretes:
 
-- amely a Homo Politicust istenként tiszteli, az a *Nép*
-- amelyik megkérdőjelezi isteni eredetét, az a C*sőcselék. *
+– amely a Homo Politicust istenként tiszteli, az a *Nép*
+– amelyik megkérdőjelezi isteni eredetét, az a C*sőcselék. *
 
 Ezáltal válik lehetségessé, hogy a Nép egyik percről a másikra csőcselékké váljon.
 

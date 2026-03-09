@@ -8,41 +8,52 @@ import Layout from '../layouts/Layout.astro';
     class="relative min-h-[100vh] md:min-h-[100vh] flex items-center justify-center bg-cover bg-center bg-fixed"
     style="background-image: url('/images/hero-bg.jpg');"
   >
-    <div class="absolute inset-0 bg-black/70"></div>
     <div class="relative z-10 text-center text-white px-5 max-w-[620px]">
-      <h1 class="text-4xl md:text-[3.2rem] font-bold leading-tight mb-4">
+      <h1 class="text-4xl md:text-[3.2rem] font-bold leading-tight mb-4 drop-shadow-lg">
         T. Ágoston László<br />
         <span class="font-normal text-2xl md:text-3xl">író, újságíró</span>
       </h1>
-      <p class="text-2xl md:text-3xl font-bold mb-8">(1942–2017)</p>
+      <p class="text-2xl md:text-3xl font-bold mb-8 drop-shadow-lg">(1942–2017)</p>
       <a
-        href="/konyvek"
-        class="inline-block bg-accent hover:bg-accent-light text-white font-semibold px-8 py-3 rounded-[10px] text-lg transition-colors"
+        href="/irasok"
+        class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/30 hover:bg-white/25 text-white font-semibold px-10 py-4 rounded-full text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"
       >
-        Könyvek megtekintése
+        Írások olvasása
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
       </a>
     </div>
   </section>
 
   <!-- Profán ima idézet -->
   <section class="bg-bg-alt py-16 md:py-24">
-    <div class="max-w-[800px] mx-auto px-5 text-center">
-      <blockquote class="text-lg md:text-xl leading-relaxed text-text italic mb-6">
-        <p class="mb-4">
-          "És szólt az Úr, ujját levéve számról; mit láttál, most elmondhatod. Adott hozzá szót, ceruzát is, és maga
-          nézte át a kéziratot. És adott hű társat, aki segít, rendelt mellém jó barátokat. Kertet, madárdalt, szép
-          virágot, asztalomra kenyeret ─ no nem halomra, csak a mindennapit.
+    <div class="max-w-[1000px] mx-auto px-5 grid md:grid-cols-[250px_1fr] gap-10 items-center">
+      <div class="flex justify-center">
+        <img
+          src="/images/Tagyostonlaszlo.jpg"
+          alt="T. Ágoston László"
+          class="w-[250px] rounded-lg object-cover shadow-lg"
+        />
+      </div>
+      <div>
+        <blockquote class="text-lg md:text-xl leading-relaxed text-text italic mb-6">
+          <p class="mb-4">
+            "És szólt az Úr, ujját levéve számról; mit láttál, most elmondhatod. Adott hozzá szót, ceruzát is, és maga
+            nézte át a kéziratot. És adott hű társat, aki segít, rendelt mellém jó barátokat. Kertet, madárdalt, szép
+            virágot, asztalomra kenyeret ─ no nem halomra, csak a mindennapit.
+          </p>
+          <p class="mb-4">
+            Majd jött a kór, a fájdalom, testembe kín hasít. Uram, kímélj meg tőle ─ kértem Őt, de nem hallotta óhajom.
+            Legyen hát meg az akarat, tégy szándékod szerint. A harcot lásd, én feladom, kezedbe adom sorsomat, s nem
+            kérek már mást, Uram. Csak egyet adj meg még nekem, mit senki más nem adhat; taníts meg úgy, ahogy csak Te
+            tudsz. Taníts, Uram, megbocsátani!"
+          </p>
+        </blockquote>
+        <p class="text-text-muted text-sm">
+          (T. Ágoston László: Profán ima – <em>részlet</em>)
         </p>
-        <p class="mb-4">
-          Majd jött a kór, a fájdalom, testembe kín hasít. Uram, kímélj meg tőle ─ kértem Őt, de nem hallotta óhajom.
-          Legyen hát meg az akarat, tégy szándékod szerint. A harcot lásd, én feladom, kezedbe adom sorsomat, s nem
-          kérek már mást, Uram. Csak egyet adj meg még nekem, mit senki más nem adhat; taníts meg úgy, ahogy csak Te
-          tudsz. Taníts, Uram, megbocsátani!"
-        </p>
-      </blockquote>
-      <p class="text-text-muted text-sm">
-        (T. Ágoston László: Profán ima – <em>részlet</em>)
-      </p>
+      </div>
     </div>
   </section>
 
@@ -76,6 +87,7 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Díjak -->
   <section
+    id="dijak"
     class="relative min-h-[500px] flex items-center bg-cover bg-center bg-fixed"
     style="background-image: url('/images/hero-bg.jpg');"
   >

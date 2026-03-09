@@ -6,47 +6,171 @@ const allPosts = await getCollection('irasok');
 const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
 const categories = [...new Set(posts.map((p) => p.data.category).filter(Boolean))] as string[];
+
+function getFirst3Sentences(body: string): string {
+  const plain = body
+    .replace(/^---[\s\S]*?---/, '')
+    .replace(/[#*_\[\]()>`~|]/g, '')
+    .replace(/!\[.*?\]\(.*?\)/g, '')
+    .replace(/\{.*?\}/g, '')
+    .replace(/\n+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const sentences = plain.match(/[^.!?…]+[.!?…]+/g);
+  if (!sentences) return plain.slice(0, 200) + '…';
+  return sentences.slice(0, 3).join('').trim();
+}
+
+const postsWithPreview = posts.map((post) => ({
+  ...post,
+  preview: getFirst3Sentences(post.body || ''),
+}));
+
+const featured = postsWithPreview[0];
+const rest = postsWithPreview.slice(1);
 ---
 
 <Layout title="Írások" description="T. Ágoston László versei, novellái és egyéb írásai.">
   <section class="max-w-[1240px] mx-auto px-5 py-12">
-    <h1 class="text-3xl md:text-4xl font-bold mb-8">Írások</h1>
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">Írások</h1>
+      <p class="text-text-muted">Versek, novellák, esszék és egyéb írások</p>
+    </div>
 
     {categories.length > 0 && (
-      <nav class="flex flex-wrap gap-2 mb-8 text-sm">
+      <nav class="flex flex-wrap gap-2 mb-10 text-sm" id="category-filter">
+        <button
+          data-category="all"
+          class="filter-btn active bg-primary text-white px-4 py-1.5 rounded-full font-medium transition-colors"
+        >
+          Összes
+        </button>
         {categories.map((cat) => (
-          <span class="bg-bg-alt border border-border px-3 py-1 rounded-full text-text-muted">{cat}</span>
+          <button
+            data-category={cat}
+            class="filter-btn bg-bg-alt border border-border px-4 py-1.5 rounded-full text-text-muted hover:border-primary hover:text-primary transition-colors"
+          >
+            {cat}
+          </button>
         ))}
       </nav>
     )}
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {posts.map((post) => (
-        <a href={`/irasok/${post.id}`} class="group block border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+    <!-- Featured post -->
+    {featured && (
+      <a
+        href={`/irasok/${featured.id}`}
+        data-category={featured.data.category || ''}
+        class="post-card group block mb-12 rounded-xl overflow-hidden border border-border hover:shadow-xl transition-all"
+      >
+        <div class="grid md:grid-cols-2">
+          {featured.data.heroImage ? (
+            <div class="aspect-[16/10] md:aspect-auto overflow-hidden bg-bg-alt">
+              <img
+                src={featured.data.heroImage}
+                alt={featured.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ) : (
+            <div class="aspect-[16/10] md:aspect-auto bg-bg-alt flex items-center justify-center min-h-[250px]">
+              <svg class="w-16 h-16 text-text-muted/20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6 4h15a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1zm0 2v12h13V6H6zm-3 1H2V5a1 1 0 011-1h1v2zm0 2H2v2h1V9zm0 4H2v2h1v-2zm0 4H2v2h1a1 1 0 01-1-1v-1z"/>
+              </svg>
+            </div>
+          )}
+          <div class="p-8 md:p-10 flex flex-col justify-center">
+            {featured.data.category && (
+              <span class="text-primary text-sm font-medium mb-3">{featured.data.category}</span>
+            )}
+            <h2 class="text-2xl md:text-3xl font-bold group-hover:text-primary transition-colors mb-4 leading-tight">
+              {featured.data.title}
+            </h2>
+            {featured.preview && (
+              <p class="text-text-muted leading-relaxed line-clamp-3 mb-4">{featured.preview}</p>
+            )}
+            <span class="text-primary font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              Olvasás
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    )}
+
+    <!-- Rest of posts -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="posts-grid">
+      {rest.map((post) => (
+        <article
+          data-category={post.data.category || ''}
+          class="post-card bg-white border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all flex flex-col"
+        >
           {post.data.heroImage ? (
             <div class="aspect-[16/10] overflow-hidden bg-bg-alt">
               <img
                 src={post.data.heroImage}
                 alt={post.data.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
           ) : (
             <div class="aspect-[16/10] bg-bg-alt flex items-center justify-center">
-              <span class="text-text-muted text-4xl opacity-30">✦</span>
+              <svg class="w-10 h-10 text-text-muted/20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6 4h15a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-1-1V5a1 1 0 011-1zm0 2v12h13V6H6zm-3 1H2V5a1 1 0 011-1h1v2zm0 2H2v2h1V9zm0 4H2v2h1v-2zm0 4H2v2h1a1 1 0 01-1-1v-1z"/>
+              </svg>
             </div>
           )}
-          <div class="p-4">
-            <h2 class="font-bold group-hover:text-primary transition-colors mb-1 text-[15px] leading-snug">
+          <div class="p-5 flex flex-col flex-1">
+            {post.data.category && (
+              <span class="text-primary text-xs font-medium">{post.data.category}</span>
+            )}
+            <h2 class="font-bold leading-snug mt-1 mb-2">
               {post.data.title}
             </h2>
-            <div class="flex gap-2 text-xs text-text-muted">
-              <time>{post.data.date}</time>
-              {post.data.category && <span>· {post.data.category}</span>}
-            </div>
+            {post.preview && (
+              <p class="text-sm text-text-muted line-clamp-3 leading-relaxed mb-4">{post.preview}</p>
+            )}
+            <a
+              href={`/irasok/${post.id}`}
+              class="mt-auto inline-flex items-center gap-1 text-primary text-sm font-semibold hover:gap-2 transition-all"
+            >
+              Tovább olvasom
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
           </div>
-        </a>
+        </article>
       ))}
     </div>
   </section>
 </Layout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const featured = document.querySelector<HTMLElement>('a.post-card.group.block.mb-12');
+  const cards = document.querySelectorAll<HTMLElement>('#posts-grid .post-card');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category;
+
+      buttons.forEach((b) => {
+        b.classList.remove('active', 'bg-primary', 'text-white');
+        b.classList.add('bg-bg-alt', 'border', 'border-border', 'text-text-muted');
+      });
+      btn.classList.add('active', 'bg-primary', 'text-white');
+      btn.classList.remove('bg-bg-alt', 'border-border', 'text-text-muted');
+
+      if (featured) {
+        featured.style.display = cat === 'all' || featured.dataset.category === cat ? '' : 'none';
+      }
+
+      cards.forEach((card) => {
+        card.style.display = cat === 'all' || card.dataset.category === cat ? '' : 'none';
+      });
+    });
+  });
+</script>
