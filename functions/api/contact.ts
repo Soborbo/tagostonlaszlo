@@ -67,12 +67,17 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }),
   });
 
+  const resendData = await resendRes.json();
+
   if (!resendRes.ok) {
+    console.error('Resend API hiba:', JSON.stringify(resendData));
     return new Response(JSON.stringify({ error: 'Hiba történt az üzenet küldésekor.' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });
   }
+
+  console.log('Email sikeresen elküldve:', JSON.stringify(resendData));
 
   return new Response(JSON.stringify({ success: true }), {
     status: 200,

@@ -92,9 +92,7 @@ import Layout from '../layouts/Layout.astro';
       });
 
       if (res.ok) {
-        status.textContent = 'Üzenet sikeresen elküldve! Köszönjük.';
-        status.className = 'text-sm text-green-700';
-        form.reset();
+        window.location.href = '/koszonjuk/';
       } else {
         throw new Error('Hiba történt');
       }
