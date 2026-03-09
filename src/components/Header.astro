@@ -1,0 +1,76 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { href: '/', label: 'Kezdőlap' },
+  { href: '/eletrajz', label: 'Életrajz' },
+  { href: '/irasok', label: 'Írások' },
+  { href: '/konyvek', label: 'Könyvek' },
+  { href: '/kapcsolat', label: 'Kapcsolat' },
+];
+---
+
+<header class="bg-white border-b border-border sticky top-0 z-50">
+  <nav class="max-w-[1240px] mx-auto px-5 flex items-center justify-between h-[70px]">
+    <a href="/">
+      <img src="/images/logo.png" alt="T. Ágoston László" class="h-[40px]" />
+    </a>
+
+    <button
+      id="menu-toggle"
+      class="md:hidden p-2 text-text hover:text-primary transition-colors"
+      aria-label="Menü"
+      aria-expanded="false"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <ul id="nav-menu" class="hidden md:flex gap-1 items-center text-[15px]">
+      {navItems.map(({ href, label }) => (
+        <li>
+          <a
+            href={href}
+            class:list={[
+              'px-4 py-2 rounded transition-colors',
+              currentPath === href || (href !== '/' && currentPath.startsWith(href))
+                ? 'text-primary font-semibold'
+                : 'text-text hover:text-primary',
+            ]}
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <ul id="mobile-menu" class="hidden flex-col border-t border-border md:hidden text-[15px]">
+    {navItems.map(({ href, label }) => (
+      <li>
+        <a
+          href={href}
+          class:list={[
+            'block px-5 py-3 border-b border-border/50 transition-colors',
+            currentPath === href || (href !== '/' && currentPath.startsWith(href))
+              ? 'text-primary font-semibold bg-bg-alt'
+              : 'text-text hover:text-primary hover:bg-bg-alt',
+          ]}
+        >
+          {label}
+        </a>
+      </li>
+    ))}
+  </ul>
+</header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('flex');
+    menu?.classList.toggle('hidden', !isOpen);
+    toggle.setAttribute('aria-expanded', String(!!isOpen));
+  });
+</script>

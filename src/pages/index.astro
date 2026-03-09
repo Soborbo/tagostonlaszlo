@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Kezdőlap" description="T. Ágoston László író, újságíró (1942-2017) hivatalos weboldala.">
+  <!-- Hero Section -->
+  <section
+    class="relative min-h-[100vh] md:min-h-[100vh] flex items-center justify-center bg-cover bg-center bg-fixed"
+    style="background-image: url('/images/hero-bg.jpg');"
+  >
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 text-center text-white px-5 max-w-[620px]">
+      <h1 class="text-4xl md:text-[3.2rem] font-bold leading-tight mb-4">
+        T. Ágoston László<br />
+        <span class="font-normal text-2xl md:text-3xl">író, újságíró</span>
+      </h1>
+      <p class="text-2xl md:text-3xl font-bold mb-8">(1942–2017)</p>
+      <a
+        href="/konyvek"
+        class="inline-block bg-accent hover:bg-accent-light text-white font-semibold px-8 py-3 rounded-[10px] text-lg transition-colors"
+      >
+        Könyvek megtekintése
+      </a>
+    </div>
+  </section>
+
+  <!-- Profán ima idézet -->
+  <section class="bg-bg-alt py-16 md:py-24">
+    <div class="max-w-[800px] mx-auto px-5 text-center">
+      <blockquote class="text-lg md:text-xl leading-relaxed text-text italic mb-6">
+        <p class="mb-4">
+          "És szólt az Úr, ujját levéve számról; mit láttál, most elmondhatod. Adott hozzá szót, ceruzát is, és maga
+          nézte át a kéziratot. És adott hű társat, aki segít, rendelt mellém jó barátokat. Kertet, madárdalt, szép
+          virágot, asztalomra kenyeret ─ no nem halomra, csak a mindennapit.
+        </p>
+        <p class="mb-4">
+          Majd jött a kór, a fájdalom, testembe kín hasít. Uram, kímélj meg tőle ─ kértem Őt, de nem hallotta óhajom.
+          Legyen hát meg az akarat, tégy szándékod szerint. A harcot lásd, én feladom, kezedbe adom sorsomat, s nem
+          kérek már mást, Uram. Csak egyet adj meg még nekem, mit senki más nem adhat; taníts meg úgy, ahogy csak Te
+          tudsz. Taníts, Uram, megbocsátani!"
+        </p>
+      </blockquote>
+      <p class="text-text-muted text-sm">
+        (T. Ágoston László: Profán ima – <em>részlet</em>)
+      </p>
+    </div>
+  </section>
+
+  <!-- Hazatért liliomok -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-[1240px] mx-auto px-5 grid md:grid-cols-[300px_1fr] gap-12 items-start">
+      <div class="flex justify-center">
+        <img
+          src="/images/hazatertliliomok.jpg"
+          alt="Hazatért liliomok könyvborító"
+          class="w-[250px] shadow-lg rounded"
+        />
+      </div>
+      <div>
+        <h2 class="text-2xl md:text-[1.8rem] font-bold text-text mb-4">T. Ágoston László: Hazatért liliomok</h2>
+        <p class="text-text leading-relaxed mb-6">
+          Az író 2017. július 13-án elhunyt, de írásai tovább élnek. 2017. október 14-én, T. Ágoston László
+          születésének 75. évfordulóján jelent meg <strong>"Hazatért liliomok"</strong> című novelláskötete, amely
+          termékeny írói pályájának legsikeresebb alkotásait tartalmazza.
+        </p>
+        <div class="space-y-3 text-text-light italic">
+          <p>"Felváltva olvassuk édesanyámmal. Szívig hatol, emlékeket idéz… megható" <em class="not-italic text-text-muted">(Evelin)</em></p>
+          <p>"Remekmű!" <em class="not-italic text-text-muted">(József)</em></p>
+          <p>"Lélekápoló!" <em class="not-italic text-text-muted">(Andrea)</em></p>
+          <p>"Valahogy mindig áhitat kerít hatalmába, ha olvasom. Bizony több dolgot is megkönnyeztem benne. Köszönöm az élményt és hogy olvashatom!" <em class="not-italic text-text-muted">(Enikő)</em></p>
+          <p>"Csodálatos a könyv, most fejeztem be, béke, szépség, szeretet. Csoda. Köszönöm!" <em class="not-italic text-text-muted">(Luca)</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Díjak -->
+  <section
+    class="relative min-h-[500px] flex items-center bg-cover bg-center bg-fixed"
+    style="background-image: url('/images/hero-bg.jpg');"
+  >
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 max-w-[1240px] mx-auto px-5 py-16 grid md:grid-cols-[1fr_1fr] gap-12 items-center w-full">
+      <div>
+        <img src="/images/dij1.jpg" alt="T. Ágoston László díjai" class="w-full rounded shadow-lg" />
+      </div>
+      <div class="text-white">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">T. Ágoston László díjai</h2>
+        <ul class="text-lg md:text-xl space-y-2">
+          <li>Krúdy Emlékérem (1989)</li>
+          <li>a Szabad Magyar Újságírók Szövetsége /Washington/ dicsérő oklevele (1999)</li>
+          <li>Országos Milleniumi Pályázat – különdíj (2000)</li>
+          <li>Díj a Magyar Rádió irodalmi pályázatán (2002)</li>
+          <li>Fehér Mária alkotói díj (2005)</li>
+          <li>Lenkey – plakett (2013)</li>
+          <li>Bólya Péter alkotói díj (2015)</li>
+          <li>Litera-Túra életműdíj (2017 – posztumusz)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Layout>

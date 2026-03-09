@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const konyvek = [
+  {
+    cim: 'Hazatért liliomok',
+    alcim: 'emlékkötet',
+    ar: '2 690 Ft',
+    kep: '/images/hazatertliliomok.jpg',
+  },
+  {
+    cim: 'A két Lenkey',
+    alcim: 'történelmi nagyregény',
+    ar: '3 100 Ft',
+    kep: '/images/A_két_lenkey.jpg',
+  },
+  {
+    cim: 'Tapicskoló',
+    alcim: 'verseskötet',
+    ar: '1 550 Ft',
+    kep: '/images/tapicskolo.jpg',
+  },
+  {
+    cim: 'Bumeráng',
+    alcim: 'novellák',
+    ar: '1 300 Ft',
+    kep: '/images/bumerang.jpg',
+  },
+  {
+    cim: 'Napijegy a holtágra',
+    alcim: 'verseskötet',
+    ar: '1 550 Ft',
+    kep: '/images/Napijegy_a_holtágra.jpg',
+  },
+];
+---
+
+<Layout title="Könyvek" description="T. Ágoston László megjelent kötetei.">
+  <section class="max-w-[1240px] mx-auto px-5 py-12">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">Könyvek</h1>
+    <p class="text-text-light mb-10">
+      Megjelent kötetek. Rendeléshez kérjük, vegye fel velünk a kapcsolatot a
+      <a href="/kapcsolat" class="text-primary hover:underline">Kapcsolat</a> oldalon.
+    </p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {konyvek.map((konyv) => (
+        <article class="bg-white border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+          <div class="aspect-[3/4] overflow-hidden bg-bg-alt flex items-center justify-center p-4">
+            <img src={konyv.kep} alt={konyv.cim} class="max-h-full max-w-full object-contain" />
+          </div>
+          <div class="p-5">
+            <h2 class="text-lg font-bold mb-1">{konyv.cim}</h2>
+            <p class="text-text-muted text-sm mb-3 italic">{konyv.alcim}</p>
+            <p class="text-accent font-bold text-lg">{konyv.ar}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Layout>

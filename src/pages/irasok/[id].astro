@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('irasok');
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout title={post.data.title} description={post.data.excerpt}>
+  <article class="max-w-[800px] mx-auto px-5 py-12">
+    <header class="mb-8">
+      <h1 class="text-2xl md:text-3xl font-bold mb-2">{post.data.title}</h1>
+      <div class="flex gap-3 text-sm text-text-muted">
+        <time>{post.data.date}</time>
+        {post.data.category && <span>· {post.data.category}</span>}
+      </div>
+    </header>
+
+    {post.data.heroImage && (
+      <img
+        src={post.data.heroImage}
+        alt={post.data.title}
+        class="w-full max-h-[500px] object-cover rounded mb-8"
+      />
+    )}
+
+    <div class="prose max-w-none leading-relaxed">
+      <Content />
+    </div>
+
+    <nav class="mt-12 pt-6 border-t border-border">
+      <a href="/irasok" class="text-primary hover:underline text-sm font-semibold">
+        &larr; Vissza az írásokhoz
+      </a>
+    </nav>
+  </article>
+</Layout>

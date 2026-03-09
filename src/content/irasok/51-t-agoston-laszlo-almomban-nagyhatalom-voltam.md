@@ -1,0 +1,26 @@
+---
+title: "T. Ágoston László: Álmomban nagyhatalom voltam"
+date: "2017-04-13"
+category: "Írások"
+excerpt: "Álmomban nagyhatalom voltam. Pontosabban NAGYHATALOM csupa nagybetűvel. Nem holmi hatalmacska, piaci bábjátékos, hanem maga a MINDEN. Az volt a nevem,"
+heroImage: "/images/posts/diktatorok.jpg"
+---
+
+Álmomban nagyhatalom voltam. Pontosabban NAGYHATALOM csupa nagybetűvel. Nem holmi hatalmacska, piaci bábjátékos, hanem maga a MINDEN. Az volt a nevem, hogy ÉN. És akkora voltam, hogy magam se láttam a végemet. Lehet, hogy nem is volt olyan, és rólam nevezték el a végtelent… Ezt még tisztázni kell, nehogy a végén még valaki kétségbe vonhassa. Valaki? Micsoda vérlázító szó ez! Hát lehet még VALAKI rajtam kívül is?
+
+Azt mondják, volt egyszer egy király, úgy hívták, hogy XIV. Lajos. Ha jól emlékszem, francia volt és Napkirálynak becézték. Még most is vitatkoznak róla a történészek, hogy 1655. április 13-án mondta-e vadászat közben, hogy „az állam én vagyok”, vagy nem mondta. Itt volt például az a bizonyos (VI) hatodik Lenin, aki soha sem mondott ilyet, mégis könyörtelenül kinyíratott mindenkit, aki kétségbe merte vonni, amit nem is mondott. Ezek után mit kellene mondanom nekem? Nem is beszélve arról, hogy ha Lajos volt a Napkirály, akkor mi vagyok én? Nevezzem magam UNIVERZUM-nak? A rangsort eleve kifejezi az, hogy az egyik hatodik volt, a másik meg tizennegyedik. Hol vannak ezek az én elsőségemhez?
+
+Különben is mi az, hogy az állam én vagyok? Megérdemli az a kis balfék, hogy csak az állam legyen. A másik meg a fülem, vagy az orrom? Ostoba fajankók. Bele is halt mindkettő, hogy nem tudtak többek lenni, mint a többi hasonszőrű hatalmasság. Azzal kezdődik a dolog, hogy én a MINDENSÉG vagyok. Nekem is van állam, orrom, fülem, lábam, a kezemmel vakarom meg azt, ami viszket, de hát én ezeket nevezem minisztereknek, államtitkároknak, meg pártelnököknek. Ezek a tenyeremből táplálkoznak, hiszen még az ellenzék vezére is tőlem kapja az apanázst, és ha én becsukom a tenyeremet, éhen hal az egész szolgahad. Mert a miniszter mind szolga. Nézd csak meg a latin szótáradat, hogy igazat szóltam! A szolgának pedig hallgass a neve, de úgy is mondhatnám, hogy kuss.
+
+Dumálni persze lehet. Kell is, hogy kellőképp elfáradjon a plebsz szája. Olykor engem is szórakoztat az a sok baromság, amit összehordanak. Hol, hol? Hát az okos telefonjaikon, meg az interneten, de olykor még a romkocsmáikban is. Azt hiszik, senki se hallja, amit egymás közt pusmognak rólam. Óvatoskodnak, titkos kódokat használnak, hogy ne értsem a szavukat. Jókat mulatok rajtuk, sőt néha magam is elhintek köztük egy-egy szaftos pletykát, hogy legyen min rágódniuk. Aztán meg lehallgatom a telefonjaikat. Igen, a miniszterekét is. Elolvasgatom a szerelmes leveleiket. Igen, a tiédet is, amit annak a bizonyos Editkének írtál. No, meg az övét is, amelyikben szakított veled a nagy fülű Jácint miatt. Látod, velem nem történhet ilyen baleset, mert én nem tartozom senkihez, csak hozzám.
+
+Jó dolog nagy hatalomnak lenni, csak néha unatkozik benne a… szóval én. Az rendben van, hogy te vagy az igazság, a jóság, meg az értelem csúcsa, de az fárasztó, hogy soha nem ér föl hozzád senki, nincs egy vitapartnered, aki tovább élesítse az elméd. Vagy tán nem is lehet, hiszen te vagy az omega? Igen, azt hiszem, ez a megoldás. Korábban a plebsz hangjaiban felcsendült az Isten neve. Azzal fenyegettek, hogy ezt már ő sem tűrheti. Melyik? Az Allah, a Keresztény Isten, Krisna, vagy a Föld Anya? Na látod, ez az én zsenialitásom. Összeugrasztom valamennyit, és amíg ők egymással harcolnak, elfoglalom valamennyi trónját. Ha megkérdezed ezek után, ki az isten, mindegyik az Aranyborjúra fog mutogatni és hason csúszik a Mammon felé. Na látod, az is én vagyok. Időnként dobok nekik egy-két lyukas garast, és röhögök rajtuk, ahogy ölik egymást érte.
+
+A minap nagyon unatkoztam. Sehol egy apró földrengés, sehol egy árvíz, de még egy kóbor üstökös se közelít a Föld felé. Fogtam hát egy kis atomtöltetet. Nem nagyot, csak olyan jó maréknyit, és eldobtam a hátam mögé. Utálom szemtől szembe nézni a szenvedést, csupán arra voltam kíváncsi, mekkorát szól. Hát, nem mondom, elég jó hangja volt. Kipróbáltam már más fegyvereket is. Volt földindulás-égszakadás, de azért ez mégis csak más. Méltóbb hozzám. Ezrével számolták a halottakat, tízezrével visongtak a menekülők. Megnyílt a föld, pokollá vált a környék, egyetlen csigabiga se maradt a házában… csak sülve.
+
+No, hát ezt akartam mondani. Van még kérdés, hozzászólás, óhaj, sóhaj? Köszönöm. Így gondoltam én is.
+
+Álmomban NAGYHATALOM voltam. Nagyon nagy, szinte óriás. Nem ért fel hozzám se szó, se indulat. Az istenekkel kugliztam vasárnap délután, és elnyertem minden hatalmukat. Már éppen be akartam váltani a kaszinóban a zsetonokat, amikor felriadtam. A feleségem ült mellettem a heverőn és a lábát áztatta.
+
+‒ Mi történt? ‒ kérdeztem tőle bambán.
+‒ Semmi különös, édes fiam ‒ mondta rezignáltan. ‒ Kicsit többet ittál a kelleténél. Lefektettelek, hogy kialudd magad, közben meg áztatgatom a fájós, bütykös lábamat. Nem tudom, mit álmodhattál, de addig-addig forgolódtál, míg beleért a kezed a bilikomba. Pedig hányszor mondtam már, hogy jobban nézz körül, mielőtt lefekszel…

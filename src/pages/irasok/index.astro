@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('irasok');
+const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const categories = [...new Set(posts.map((p) => p.data.category).filter(Boolean))] as string[];
+---
+
+<Layout title="Írások" description="T. Ágoston László versei, novellái és egyéb írásai.">
+  <section class="max-w-[1240px] mx-auto px-5 py-12">
+    <h1 class="text-3xl md:text-4xl font-bold mb-8">Írások</h1>
+
+    {categories.length > 0 && (
+      <nav class="flex flex-wrap gap-2 mb-8 text-sm">
+        {categories.map((cat) => (
+          <span class="bg-bg-alt border border-border px-3 py-1 rounded-full text-text-muted">{cat}</span>
+        ))}
+      </nav>
+    )}
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map((post) => (
+        <a href={`/irasok/${post.id}`} class="group block border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+          {post.data.heroImage ? (
+            <div class="aspect-[16/10] overflow-hidden bg-bg-alt">
+              <img
+                src={post.data.heroImage}
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          ) : (
+            <div class="aspect-[16/10] bg-bg-alt flex items-center justify-center">
+              <span class="text-text-muted text-4xl opacity-30">✦</span>
+            </div>
+          )}
+          <div class="p-4">
+            <h2 class="font-bold group-hover:text-primary transition-colors mb-1 text-[15px] leading-snug">
+              {post.data.title}
+            </h2>
+            <div class="flex gap-2 text-xs text-text-muted">
+              <time>{post.data.date}</time>
+              {post.data.category && <span>· {post.data.category}</span>}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>
